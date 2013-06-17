@@ -3807,7 +3807,7 @@ function buildContentArea(obj2) {
   $('#login-organization').focus();
 
   function displayLoginError(message) {
-    var message = message || '<strong>ERROR</strong>: Your details were incorrect.<br/>';
+    var message = message || '<strong>ERROR</strong>: Invalid username or password.<br/>';
     $('#login-area .box').effect('shake', {times: 2},100);
     $('#login-message').html(message);
     $('#login-message').show();
@@ -3815,7 +3815,7 @@ function buildContentArea(obj2) {
 
   function setupMenu() {
     var userNameBox = $('#userEmail');
-    var userEmail = Usergrid.userSession.getUserEmail();
+    var userEmail = Usergrid.userSession.getUserEmail();   // Usergrid.userSession.getUsername;
     if (userEmail){
       userNameBox.html(userEmail);
       setupOrganizationsMenu();

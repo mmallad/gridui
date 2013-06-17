@@ -4711,7 +4711,7 @@ a:active {
 }
 /* line 268, ../sass/usergrid.scss */
 .navbar .nav .active {
-  background-color: #b22714 !important;
+  background-color:  #2FABE9 !important;
 }
 /* line 271, ../sass/usergrid.scss */
 .navbar .nav .active .go-home {
@@ -6454,7 +6454,6 @@ body {
     -moz-border-radius: 2px;
     border-radius: 2px;
 }
-
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {

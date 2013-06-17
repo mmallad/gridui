@@ -76,12 +76,11 @@
               <h2 class="apigee"><a href="https://chipjoin.com" target="_blank">ChipJoin</a></h2>
             <ul class="nav">
               <li class="portal-name" ><a class="go-home">App Services</a></li>
-              <li><a href="http://mobileanalytics.apigee.com/pages/signin.seam " target="_blank"> Mobile Analytics</a></li>
             </ul>
           </div>
           <div class="right-header">
             <ul id="profileMenu" class="nav secondary-nav">
-              <li ><a href="#">Dashboard</a></li>
+              <li ><a href="/index.html"><i class="icon-home icon-white"></i>Dashboard</a></li>
               <li class="dropdown">
                 <a id="account-link1" class="dropdown-toggle" data-toggle="dropdown" ><span id="userEmail">test</span> <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -156,7 +155,7 @@
     <div class="row">
       <div id="login-area" class="span6 offset1">
         <div class="console-section well thingy">
-          <span class="title">We're holding a seat for you!</span>
+          <span class="title">Welcome to ChipJoin</span>
           <br /><br />
           <p>Thanks for signing up for a spot on our private beta. We will send you an email as soon as we're ready for you!</p>
           <p>In the mean time, you can stay up to date with App Services on our <a href="https://groups.google.com/forum/?fromgroups#!forum/usergrid">Google Group</a>.</p>
@@ -169,7 +168,8 @@
       <div id="signup-area" class="span6 offset1">
         <div id="signup-message" class="alert alert-error"></div>
         <div class="console-section">
-          <div class="well thingy"><span class="title">Register</span> </div>
+          <div class="well thingy"><span class="title" style="position: relative; left: 18px;">Register</span> </div>
+            <hr />
           <form name="signup-form" id="signup-form" onsubmit="return false;" class="form-horizontal">
             <div class="control-group">
               <label class="control-label" for="signup-organization-name">Organization Account</label>
@@ -217,29 +217,27 @@
       </div>
     </div>
   </div>
-  <div id="forgot-password-page" class="container">
+  <div id="forgot-password-page" class="container" style="position: relative; top: 56px;">
     <iframe class="container"></iframe>
   </div>
+
   <div id="console-page" class="container-fluid">
 
   <div id="main1">
       <div id="main2">
       <!-- start: Main Menu -->
-      <div class="span2 main-menu-span" style="background-image:url(images/bg.jpg);">
+      <div class="span2 main-menu-span">
           <div class="nav-collapse sidebar-nav">
-              <ul class="nav nav-tabs nav-stacked main-menu" style="background-image:url(images/bg.jpg);">
+              <ul id="application-panel-buttons" class="nav nav-tabs nav-stacked main-menu" style="background-image:url(images/bg.jpg); position: relative;
+left: -36px; ">
                   <li><a href="index.html"><i class="icon-home icon-black"></i><span class="hidden-tablet"> Dashboard</span></a></li>
-                  <li><a href="ui.html"><i class="icon-eye-open icon-black"></i><span class="hidden-tablet"> UI Features</span></a></li>
-                  <li><a href="form.html"><i class="icon-edit icon-black"></i><span class="hidden-tablet"> Forms</span></a></li>
-                  <li><a href="chart.html"><i class="icon-list-alt icon-black"></i><span class="hidden-tablet"> Charts</span></a></li>
-                  <li><a href="typography.html"><i class="icon-font icon-black"></i><span class="hidden-tablet"> Typography</span></a></li>
-                  <li><a href="gallery.html"><i class="icon-picture icon-black"></i><span class="hidden-tablet"> Gallery</span></a></li>
-                  <li><a href="table.html"><i class="icon-align-justify icon-black"></i><span class="hidden-tablet"> Tables</span></a></li>
-                  <li><a href="calendar.html"><i class="icon-calendar icon-black"></i><span class="hidden-tablet"> Calendar</span></a></li>
-                  <li><a href="grid.html"><i class="icon-th icon-black"></i><span class="hidden-tablet"> Grid</span></a></li>
-                  <li><a href="file-manager.html"><i class="icon-folder-open icon-black"></i><span class="hidden-tablet"> File Manager</span></a></li>
-                  <li><a href="icon.html"><i class="icon-star icon-black"></i><span class="hidden-tablet"> Icons</span></a></li>
-                  <li><a href="login.html"><i class="icon-lock icon-black"></i><span class="hidden-tablet"> Login Page</span></a></li>
+                  <li><a href="#dashboard" id="dashboard-link"><i class="icon-edit icon-black"></i><span class="hidden-tablet">App Overview</span></a></li>
+                  <li><a href="#users" id="users-link"><i class="icon-user icon-black"></i><span class="hidden-tablet">User Management</span></a></li>
+                  <li><a href="#collections" id="collections-link"><i class="icon-book icon-black"></i><span class="hidden-tablet">App Data</span></a></li>
+                  <li><a href="#activities" id="activities-link"><i class="icon-calendar icon-black"></i><span class="hidden-tablet">Activities</span></a></li>
+                  <li><a href="#analytics" id="analytics-link"><i class="icon-signal icon-black"></i><span class="hidden-tablet">Analytics</span></a></li>
+                  <li><a href="#properties" id="properties-link"><i class="wrench icon-black"></i><span class="hidden-tablet">App Settings</span></a></li>
+                  <li><a href="#shell" id="shell-link"><i class="icon-warning-sign icon-black"></i><span class="hidden-tablet">Shell</span></a></li>
               </ul>
           </div><!--/.well -->
       </div><!--/span-->
@@ -256,10 +254,11 @@
         <div id="left2" style="display: none;">
           <div id="left2-content" class="column-in">
 
-            <div id="sidebar-menu2" style="padding-top: 10px; display: none;">
-              <h4 class="panel-title">End-Users</h4>
-              <p class="panel-desc">Data related to your application end-users.</p>
-              <hr style="margin: 0 0 0 1px;">
+            <div id="sidebar-menu2" style="padding-top: 10px; width: 160px; display: none;position: relative;
+left: 2px;">
+              <h4 class="panel-title" style="position: relative; left: 8px;">End-Users</h4>
+              <p class="panel-desc" style="position: relative; left: 8px;">Data related to your application end-users.</p>
+
               <ul id="app-end-users-buttons" class="nav nav-list" style="margin-bottom: 5px;">
                 <li><a href="#users" id="users-sublink"><span class="nav-menu-text">/users</span></a></li>
                 <li><a href="#groups" id="groups-sublink"><span class="nav-menu-text">/groups</span></a></li>
@@ -268,18 +267,18 @@
             </div>
 
             <div id="left-collections-menu" style="display: none;">
-              <h4 class="panel-title">Data Collections</h4>
-                <p class="panel-desc">Explore your application's data collections.</p>
-                <hr class="col-divider">
-                <div style="padding:10px 0 10px 10px;">
-                  <a id="data-explorer-link"><i class="icon-user"></i> <span class="nav-menu-text">Data Explorer</span></a>
+              <h4 class="panel-title" style="position: relative; left:8px;">Data Collections</h4>
+                <p class="panel-desc" style="position: relative; left:8px;">Explore your application's data collections.</p>
+                <hr class="col-divider" style="position: relative; left:8px;">
+                <div style="padding:10px 0 10px 10px;" style="position: relative; left:8px;">
+                  <a id="data-explorer-link" style="position: relative; left:8px;"><i class="icon-user"></i><span style="position: relative; left: -4px;" class="nav-menu-text">Data Explorer</span></a>
                 </div>
-                <hr class="col-divider">
+                <hr class="col-divider" style="position: relative; left:8px;">
 
-                <div id="collections-menu" style="padding: 10px">
+                <div id="collections-menu" style="padding: 10px;position: relative; left:8px;">
                  <a class="btn" data-toggle="modal" href="#dialog-form-new-collection">Add Collection</a>
                 </div>
-                <hr class="col-divider">
+                <hr class="col-divider" style="position: relative; left:8px;">
                 <div id="left-collections-content">
                 </div>
             </div>
@@ -499,7 +498,7 @@
                               </div>
                             </fieldset>
                             <div class="form-actions">
-                              <input type="button" name="button-update-account" id="button-update-account" value="Update" class="btn btn-usergrid span"/>
+                              <input style="position: relative; left: 50px;" type="button" name="button-update-account" id="button-update-account" value="Update" class="btn btn-usergrid span"/>
                             </div>
                           </form>
                         </div>
